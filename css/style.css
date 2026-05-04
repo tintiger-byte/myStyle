@@ -1,0 +1,197 @@
+/* ============================================
+   미니 홈페이지 — 3색 테마
+   포인트: #2d6a4f · 배경 베이스: #f4f1ea · 본문 텍스트: #1b263b
+   ============================================ */
+
+*,
+*::before,
+*::after {box-sizing: border-box;}
+
+html {margin: 0;}
+
+body {margin: 0;
+  min-height: 100vh;
+  color: #1b263b;
+  font-family: "Noto Sans KR", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  text-align: left;
+  width: 100%;
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.25rem 2.5rem;
+  background-color: #f4f1ea;
+  background-image: linear-gradient(
+    165deg,
+    #f4f1ea 0%,
+    #e8f0ec 48%,
+    #dce9e2 100%
+  );
+  background-size: 100% 100%;
+  background-position: center top;}
+
+/* ----- Header ----- */
+.site-header {margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 2rem 1.75rem 1.75rem;
+  border: 1px solid rgba(45, 106, 79, 0.35);
+  border-radius: 0 0 1rem 1rem;
+  background-color: #2d6a4f;
+  color: #f4f1ea;
+  text-align: center;}
+
+.site-header h1 {margin: 0 0 1rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.02em;}
+
+.profile-image {display: block;
+  width: min(200px, 55vw);
+  height: auto;
+  margin: 0 auto;
+  border: 4px solid rgba(244, 241, 234, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 10px 28px rgba(27, 38, 59, 0.25);}
+
+/* ----- Nav (스트라이프 패턴) ----- */
+.site-nav {margin: 0 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(45, 106, 79, 0.28);
+  border-top: none;
+  border-radius: 0 0 0.75rem 0.75rem;
+  background-color: #1b4332;
+  background-image: repeating-linear-gradient(
+    105deg,
+    #1b4332 0px,
+    #1b4332 12px,
+    #2d6a4f 12px,
+    #2d6a4f 24px
+  );
+  background-size: 48px 48px;
+  background-position: 0 0;}
+
+.site-nav ul {display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;}
+
+.site-nav a {display: inline-block;
+  padding: 0.35rem 0.65rem;
+  color: #f4f1ea;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  background-color: rgba(244, 241, 234, 0.12);
+  border-color: rgba(244, 241, 234, 0.35);}
+
+/* ----- Main sections ----- */
+.site-main {margin: 0;padding: 0;}
+
+.section-intro,
+.section-works,
+.section-memo {padding: 1.5rem 1.35rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid rgba(27, 38, 59, 0.12);
+  border-radius: 0.85rem;
+  background-color: rgba(255, 255, 255, 0.72);}
+
+.section-intro h2,
+.section-works h2,
+.section-memo h2 {margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1b263b;}
+
+.profile-area p {margin: 0;}
+
+.section-divider {margin: 0.25rem 0 1rem;
+  border: none;
+  border-top: 1px dashed rgba(45, 106, 79, 0.45);}
+
+.work-list {margin: 0;
+  padding: 0;
+  list-style: none;}
+
+.work-list li {border-bottom: 1px solid rgba(45, 106, 79, 0.25);
+  padding: 0.65rem 0;}
+
+.work-list li:last-child {border-bottom: none;}
+
+.work-list a {color: #2d6a4f;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;}
+
+.work-list a:hover,
+.work-list a:focus-visible {color: #1b4332;}
+
+/* ----- 방문자 메모 폼 ----- */
+.visitor-form {margin: 0;padding: 0;}
+
+.form-field {margin-bottom: 1rem;}
+
+.form-field label {display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1b263b;}
+
+.form-field input,
+.form-field select,
+.form-field textarea {width: 100%;
+  max-width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(27, 38, 59, 0.22);
+  border-radius: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #1b263b;
+  background-color: #fffdf9;}
+
+.form-field textarea {resize: vertical;
+  min-height: 7rem;}
+
+.submit-btn {display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.65rem 1.35rem;
+  border: 2px solid #1b4332;
+  border-radius: 0.5rem;
+  background-color: #2d6a4f;
+  color: #f4f1ea;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;}
+
+.submit-btn:hover,
+.submit-btn:focus-visible {background-color: #1b4332;
+  color: #f4f1ea;}
+
+/* ----- Footer ----- */
+.site-footer {margin-top: 1.5rem;
+  padding: 1.35rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #1b263b;
+  color: #dce9e2;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.55;}
+
+.site-footer p {margin: 0.35rem 0;}
+
+.footer-copy {font-size: 0.8rem;
+  opacity: 0.92;}

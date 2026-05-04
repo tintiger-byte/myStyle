@@ -1,0 +1,157 @@
+:root {--bg: #eaf1ff;
+       --ink: #0d1b2a;
+       --card: #ffffff;
+       --line: #cbd5e1;
+       --brand: #1d4ed8;
+       --badge: #111827;
+       --badgeText: #f9fafb;
+      --stripeA: rgba(255, 255, 255, 0.55);
+      --stripeB: rgba(255, 255, 255, 0);}
+
+* {box-sizing: border-box;}
+
+body {margin: 0;
+     font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans KR", Arial, sans-serif;
+     color: var(--ink);
+     background-color: var(--bg);
+     line-height: 1.5;}
+
+.page {max-width: 760px;
+       margin: 0 auto;
+       padding: 18px 14px 48px;}
+
+.title-bar {padding: 14px 16px;
+           border-radius: 14px;
+           margin-bottom: 14px;
+           background-color: #0f172a;
+           color: #f8fafc;
+           background-image: linear-gradient(0deg, var(--stripeA) 0 10px, var(--stripeB) 10px 20px);
+           background-size: 100% 20px;}
+
+.title-bar h1 {margin: 0;
+               font-size: 28px;
+               letter-spacing: -0.02em;}
+
+.movie-card {border: 1px solid var(--line);
+            border-radius: 14px;
+           background-color: var(--card);
+           overflow: hidden;
+           box-shadow: 0 10px 26px rgba(15, 23, 42, 0.08);}
+
+.poster {width: 160px;
+         height: auto;
+         margin: 14px 16px 6px;
+          border-radius: 10px;
+          border: 1px solid #e5e7eb;
+         display: block;}
+
+.section {padding: 6px 16px 10px;}
+
+h2 {margin: 12px 0 8px;
+    font-size: 20px;}
+
+hr {border: 0;
+   border-top: 1px solid var(--line);
+   margin: 10px 0;}
+
+.meta {margin: 0;
+       padding-left: 18px;}
+
+.meta li {margin: 6px 0;}
+
+.badge {display: inline-block;
+       padding: 2px 8px;
+       border-radius: 999px;
+       background-color: var(--badge);
+       color: var(--badgeText);
+       font-size: 12px;
+       vertical-align: baseline;}
+
+.badge--kind {background-color: #0ea5e9;
+              color: #082f49;}
+
+.source {display: block;
+         margin-top: 8px;
+         color: #475569;}
+
+.source a {color: var(--brand);}
+
+.story {margin: 0;}
+
+.rating {margin: 0 0 8px;
+        display: flex;
+        align-items: center;
+        gap: 10px;}
+
+.stars {padding: 3px 8px;
+        border-radius: 999px;
+        background-color: #fef9c3;
+        color: #854d0e;}
+
+.rating-text {font-weight: 700;}
+
+.ticket {margin: 0;}
+
+.ticket a {color: var(--brand);}
+
+.review-title {padding: 6px 16px 0;
+              margin: 12px 0 6px;}
+
+.review-form {margin: 8px 16px 16px;
+              padding: 14px;
+              border-radius: 12px;
+             border: 1px solid var(--line);
+             background: #eef2ff
+                linear-gradient(45deg, rgba(29, 78, 216, 0.18) 25%, transparent 25%),
+               linear-gradient(45deg, transparent 75%, rgba(29, 78, 216, 0.18) 75%);
+              background-size: 20px 20px;
+              background-position: 0 0, 10px 10px;}
+
+.field {margin-bottom: 12px;}
+
+label,
+legend {display: block;
+        font-weight: 700;
+       margin-bottom: 6px;}
+
+input[type="text"],
+textarea {width: 100%;
+          padding: 10px 10px;
+          border-radius: 10px;
+         border: 1px solid #cbd5e1;
+         background-color: rgba(255, 255, 255, 0.92);}
+
+.radios {display: flex;
+         flex-wrap: wrap;
+         gap: 10px 14px;}
+
+.radios label {display: inline-flex;
+               align-items: center;
+               gap: 6px;
+               font-weight: 600;
+               margin: 0;
+               padding: 4px 10px;
+               border-radius: 999px;
+               background-color: #111827;
+               color: #f9fafb;}
+
+.actions {display: flex;
+           justify-content: flex-end;}
+
+button[type="submit"] {padding: 10px 12px;
+                       border-radius: 10px;
+                       border: 1px solid #94a3b8;
+                       background-color: #f1f5f9;
+                       cursor: pointer;}
+
+button[type="submit"]:hover {background-color: #e2e8f0;}
+
+/* 포스터를 배경으로 쓰는 영역(cover/center 조건 충족) */
+.movie-card {background-image: 
+              linear-gradient(180deg,
+            rgba(255, 255, 255, 0.96) 0%,
+            rgba(255, 255, 255, 0.96) 100%),
+           url("https://upload.wikimedia.org/wikipedia/ko/9/9f/%EC%99%95%EA%B3%BC_%EC%82%AC%EB%9E%91%ED%95%9C_%EB%82%A8%EC%9E%90.jpg");
+            background-size: auto, cover;
+            background-position: top left, center;
+            background-repeat: no-repeat;}

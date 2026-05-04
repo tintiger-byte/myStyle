@@ -1,0 +1,67 @@
+/* 본문 기본: rgba 텍스트 색, font 단축(font-variant·font-weight + 크기/줄간격 + 서체) */
+body {color: rgba(34, 34, 34, 0.85);
+      font: small-caps bold 16px/1.8 "Noto Sans KR", sans-serif;
+      background: #fff;
+      margin: 0;
+      padding: 1.5rem 2rem;
+      max-width: 48rem;}
+
+h1 {font-style: italic;
+    font-weight: 700;
+   margin-top: 0;}
+
+/* 섹션 제목은 본문 이탤릭 상속 해제 */
+h2 {font-style: normal;
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin: 1.25rem 0 0.75rem;}
+
+/* 페이지 본문 p: 첫 줄 들여쓰기 */
+p {text-indent: 20px;
+  margin: 0.75rem 0;}
+
+/* 책 소개 문단: 이탤릭 해제 */
+p.intro {font-style: normal;}
+
+footer p {text-indent: 0;
+         font-style: normal;
+         font-size: 0.9rem;
+         color: rgba(50, 50, 50, 0.75);}
+
+/* 책 제목: 자간 */
+.book-title {letter-spacing: 1px;}
+
+.mark-title {background-color: #cdba15;
+             padding: 0 0.15em;}
+
+/* 영어 장르 표기: 대문자(body의 small-caps 상속 해제) */
+.genre {font-variant: normal;
+       text-transform: uppercase;
+       font-size: 0.85em;
+       font-weight: 600;
+       margin-left: 0.35rem;
+        color: rgba(60, 60, 80, 0.9);}
+
+.want-read {display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            align-items: flex-start;
+            margin: 0.5rem 0;}
+
+.want-read img {flex-shrink: 0;
+               border: 1px solid rgba(0, 0, 0, 0.08);
+               border-radius: 4px;
+               object-fit: cover;}
+
+ol,
+ul {margin: 0.25rem 0;
+   padding-left: 1.25rem;}
+
+.read-list .read-done {text-decoration: line-through;
+                       color: rgba(90, 90, 90, 0.85);}
+
+a {color: rgba(25, 80, 160, 0.95);}
+
+hr {border: none;
+   border-top: 1px solid rgba(0, 0, 0, 0.12);
+   margin: 1.5rem 0;}

@@ -1,0 +1,30 @@
+/* 구글 폰트 또는 기본 sans-serif 계열 사용 */
+body { font-family: "Noto Sans KR", system-ui, -apple-system, sans-serif;  margin: 0;}
+
+/* 다중 태그 선택자: 공통 줄 간격 지정 */
+
+.box1 {background-color: aqua;
+        font-size: 20px;
+        line-height: 1.8;
+        text-align: center;
+        font-family: "Gamja Flower", sans-serif;}
+
+.ex02 {font-weight: 700; font-size: 15px;
+        line-height: 1.8; font-family:"Gamja Flower", sans-serif;}
+
+
+h1,h2 { line-height: 1.35;}
+
+h1 {color: #133c70;  text-align: center;}
+
+.animal-name { font-size: 1.75rem; color: #c05621;}
+
+h2 {color: #106b27; font-weight: 700;}
+
+p { line-height: 1.8; font-size: 15px;}
+
+
+
+
+
+

@@ -1,62 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 독서 목록 페이지</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나의 독서 목록</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/book.css">
 </head>
 <body>
-    <header id="header">
-        <nav id="nav">
-            <h1>📚️나의 독서 목록</h1>
-        </nav>
-    </header>
-    
-    <main>
-        <div>
-            <h2>읽고 싶은 책</h2>
-                <table>
-                    <tr>
-                        <td> <img src="https://image.yes24.com/goods/1940233/XL" alt="책이미지" width="150" title="외부주소연결"> 
-                        </td>
-                        <td>
-                            <ol>
-                                <li><mark><strong>총.균.쇠</strong></mark></li>
-                                <li>헤리포터</li>
-                                <li>어린왕자</li>
-                            </ol>
-                        </td>
-                    </tr>
-                </table>
-                                      
-                    
-                <p><a href="https://www.ypbooks.co.kr" target="_blank">📖영풍문고에서 검색하기</a></p>
-                <hr>
-        
-                <h2>이미 읽은 책☑️</h2>
-                    <ul>
-                        <li><del>채식주의자</del></li>
-                        <li><del>82년생 김지영</del></li>
-                    </ul>
-        </div>
-    
-    </main>
-    <hr>
-    <aside>
-        <h3>📍 추천 도서관</h3>
-        <ul>
-            <li>대전 한밭도서관</li>
-            <li>세종 국립도서관</li>
-        </ul>
-    </aside>
+  <header>
+    <h1>📚 나의 독서 목록</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>읽고 싶은 책</h2>
+      <div class="want-read">
+        <img src="https://image.yes24.com/goods/1940233/XL" alt="책이미지" width="150" title="외부주소연결" alt="총, 균, 쇠 표지" width="120" height="180">
+        <ol>
+          <li>
+            <span class="book-title mark-title">총.균.쇠</span>
+            <span class="genre">essay</span>
+          </li>
+          <li>
+            <span class="book-title">해리포터</span>
+            <span class="genre">novel</span>
+          </li>
+          <li>
+            <span class="book-title">어린왕자</span>
+            <span class="genre">novel</span>
+          </li>
+        </ol>
+      </div>
+      <p class="intro">
+        『총, 균, 쇠』는 인류 문명의 불균등한 발전을 지리·환경·생물학적 관점에서 풀어낸다. 왜 유럽과 아시아의 사회가 오늘날 세계의 주도권을 쥐게 되었는지, 그 역사적 과정을 넓은 시야로 조망할 수 있게 해 주는 책이다.
+      </p>
+      <p>
+        <a href="https://www.ypbooks.co.kr/" target="_blank" rel="noopener noreferrer">📖 영풍문고에서 검색하기</a>
+      </p>
+    </section>
+
     <hr>
 
-    <footer id="">
-        <div class="copyright">
-            <p><small>작성자 : 송석호 · 2026년</small></p>
-        </div>
-    </footer>
-    
+    <section>
+      <h2>이미 읽은 책 ✓</h2>
+      <ul class="read-list">
+        <li class="read-done">
+          <span class="book-title">채식주의자</span>
+          <span class="genre">novel</span>
+        </li>
+        <li class="read-done">
+          <span class="book-title">82년생 김지영</span>
+          <span class="genre">novel</span>
+        </li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>📌 추천 도서관</h2>
+      <ul>
+        <li>대전 한밭도서관</li>
+        <li>세종 국립도서관</li>
+      </ul>
+    </section>
+
+    <hr>
+  </main>
+
+  <footer>
+    <p><small>작성자 : 송석호 · 2026년</small></p>
+  </footer>
 </body>
 </html>
